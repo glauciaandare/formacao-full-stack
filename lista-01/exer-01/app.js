@@ -18,3 +18,5 @@ readline.question('Digite um número inteiro: ', (numero) => {
 
     readline.close(); 
 });
+
+
