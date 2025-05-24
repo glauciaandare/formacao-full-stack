@@ -6,8 +6,8 @@ const entrada = readline.createInterface({
     output: process.stdout
 });
 
-entrada.question("Digite o número de maçãs compradas: ", function(qtdStr) {
-    const quantidade = parseInt(qtdStr);
+entrada.question("Digite o número de maçãs compradas: ", function(valor) {
+    const quantidade = parseInt(valor);
 
     if (isNaN(quantidade) || quantidade <= 0) {
         console.log("Quantidade inválida.");
