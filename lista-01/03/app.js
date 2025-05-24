@@ -1,11 +1,11 @@
 const readline = require('readline');
 
-const rl = readline.createInterface({
+const entrada = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question('Digite a nota (0 a 10): ', function(input) {
+entrada.question('Digite a nota (0 a 10): ', function(input) {
     const nota = parseFloat(input);
 
     if (isNaN(nota) || nota < 0 || nota > 10) {
@@ -18,5 +18,5 @@ rl.question('Digite a nota (0 a 10): ', function(input) {
         console.log("Classificação: Reprovado");
     }
 
-    rl.close();
+    entrada.close();
 });

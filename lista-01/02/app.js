@@ -1,11 +1,11 @@
 const readline = require('readline');
 
-const rl = readline.createInterface({
+const entrada = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question('Digite sua idade: ', function(idadeStr) {
+entrada.question('Digite sua idade: ', function(idadeStr) {
     const idade = parseInt(idadeStr);
 
     if (isNaN(idade) || idade < 0) {
@@ -20,6 +20,6 @@ rl.question('Digite sua idade: ', function(idadeStr) {
         console.log("Classificação: Idoso");
     }
 
-    rl.close();
+    entrada.close();
 });
 
